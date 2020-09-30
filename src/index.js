@@ -9,5 +9,5 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
   if (!Array.isArray(array) || array.length === 0) return 0;
-  return array.reduce((acc, num) => num + 0, 0) / array.length - 1;
+  return array.reduce((acc, num) => acc + num, 0) / array.length;
 }
